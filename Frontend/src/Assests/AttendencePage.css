@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.attendance-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.date-input {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+.navbar111 {
+    /* position: relative;
+    overflow: hidden;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    background: #3c738b; */
+    width: 100%;
+    background-color: #162354;
+   
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    /* border-radius: 100px;  */
+  }
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button.present {
+    background-color: #28a745;
+    color: white;
+}
+
+button.absent {
+    background-color: #dc3545;
+    color: white;
+}
+
+.submit-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.present-row {
+    background-color: #d4edda;
+}
+
+.absent-row {
+    background-color: #f8d7da;
+}
+
+@media (max-width: 768px) {
+    .attendance-container {
+        padding: 10px;
+        margin: 20px;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,85 @@
+.leave-request-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #87CEEB; /* Add a light gray background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .navbar1 {
+    width: 100%;
+    background-color: #162354;
+   
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Add a rounded corner */
+  }
+  
+  .button-container {
+    margin-bottom: 20px;
+  }
+  
+  .fetch-leave-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a transition effect */
+  }
+  
+  .fetch-leave-btn:hover {
+    background-color: #3e8e41; /* Darken the green color on hover */
+  }
+  
+  .leave-table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .leave-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* White background for the table */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .leave-table th, .leave-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .leave-table th {
+    background-color: #134768; /* Light gray background for the table header */
+  }
+  
+  .proceed-btn {
+    padding: 5px 10px;
+    background-color: #FF5722; /* Orange color for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a transition effect */
+  }
+  
+  .proceed-btn:hover {
+    background-color: #ff4500; /* Darken the orange color on hover */
+  }
+  
+  @media (max-width: 600px) {
+    .leave-request-container {
+      padding: 10px;
+    }
+  
+    .fetch-leave-btn, .proceed-btn {
+      width: 100%;
+      padding: 10px;
+    }
+  }

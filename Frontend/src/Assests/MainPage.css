@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0d9e3;
+    /* background-image: url(""); */
+    /* background-size: 200px 200px; */
+    /* background-position: 0% 100%; */
+    /* animation: gradient 3s ease-in-out infinite; */
+    overflow: scroll;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just to keep the space available */
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #c0d9e3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: scroll;
+  }
+  .main::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    background: #c0d9e3;
+    border-radius: 10px;
+  }
+  
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, #3c738b, #1e5885);
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .nav-item:nth-child(odd) {
+    margin-left: 50%;
+  }
+  
+  .nav-item:nth-child(even) {
+    margin-right: 50%;
+  }
+  
+  .nav-item:hover {
+    background: #285f8d;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-item:active {
+    background: #45A0E6;
+    transform: translateY(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+    }
+    
+    .nav-item {
+      width: 80%;
+      height: auto;
+      margin: 0;
+    }
+  }
+  
+  .navbar111 {
+    /* position: relative;
+    overflow: hidden;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    background: #3c738b; */
+    width: 100%;
+    background-color: #162354;
+   
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    /* border-radius: 100px;  */
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }

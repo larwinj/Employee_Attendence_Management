@@ -1,0 +1,104 @@
+.view-records-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c0d9e3; /* Add a light gray background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* max-width: 800px; */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #c0d9e3; /* Add a white background */
+    /* border: 1px solid #ddd; Add a border */
+    border-radius: 10px; /* Add a rounded corner */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); Add a subtle shadow */
+  }
+  
+  .input-field {
+    margin: 10px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Add a light gray background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Add a subtle shadow */
+    transition: box-shadow 0.3s; /* Add a transition effect */
+  }
+  
+  .input-field:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Change the shadow on focus */
+    border-color: #4CAF50; /* Change the border color on focus */
+    background-color: #fff; /* Change the background color on focus */
+  }
+  
+  .get-records-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a transition effect */
+  }
+  
+  .get-records-btn:hover {
+    background-color: #3e8e41; /* Darken the green color on hover */
+  }
+  
+  .records-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  
+  .records-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* White background for the table */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 50px;
+  }
+  
+  .records-table th, .records-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  .records-table tr.present{
+    background-color: #84c086;
+  }
+  .records-table tr.absent {
+    background-color: #FFC5C5; /* Light red background for absent rows */
+  }
+  .records-table th {
+    background-color: #1e405a;
+    color:white; /* Light gray background for the table header */
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .input-field {
+      width: calc(100% - 20px);
+    }
+  
+    .get-records-btn {
+      width: calc(100% - 20px);
+    }
+  }

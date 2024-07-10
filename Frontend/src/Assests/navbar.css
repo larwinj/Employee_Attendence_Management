@@ -1,0 +1,27 @@
+.navbar {
+    position: relative;
+    overflow: hidden; /* Ensure the animation doesn't overflow */
+    background-color: #162354;
+    color: #fff;
+    margin-top: 10px;
+    height: 50px; /* Adjust as necessary */
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
